@@ -76,7 +76,7 @@ class FaceEngine:
             return {
                 "is_match": bool(is_match),
                 "distance": float(distance),
-                "error": None
+                "message": None
             }
         
         except ValueError:
@@ -84,7 +84,7 @@ class FaceEngine:
             return {
                 "is_match": False,
                 "distance": None,
-                "error": "Invalid vector"
+                "message": "Invalid vector"
             }
         
         except Exception as e:
@@ -92,5 +92,5 @@ class FaceEngine:
             return {
                 "is_match": False,
                 "distance": None,
-                "error": str(e)
+                "message": str(e)
             }

@@ -1,6 +1,7 @@
 # testing.py
 
 from face_engine import FaceEngine
+import sys
 
 
 def test_face_engine(img_path):
@@ -10,6 +11,9 @@ def test_face_engine(img_path):
 
     print("\n[TEST] Face Engine Test Results:")
     print(f"Status: {results['status']}")
+
+    size_of_vector = sys.getsizeof(results['biometric_vector']) if results['status'] == 'success' else 0
+    print(f"\n [Test] Size of biometric vector: {size_of_vector} bytes")
 
     return results['biometric_vector'] if results['status'] == 'success' else None
 
