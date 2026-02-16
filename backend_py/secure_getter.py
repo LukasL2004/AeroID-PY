@@ -10,7 +10,7 @@ import os
 # Load environment variables from .env file
 load_dotenv()
 
-SHARED_KEY = os.getenv('SHARED_KEY')
+SHARED_KEY = os.getenv('IMAGE_KEY')
 cipher = Fernet(SHARED_KEY)
 
 

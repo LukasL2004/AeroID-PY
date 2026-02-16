@@ -10,7 +10,7 @@ load_dotenv()
 #key = Fernet.generate_key()
 #print(f"Key: {key.decode()}")
 
-SHARED_KEY = os.getenv('SHARED_KEY')
+SHARED_KEY = os.getenv('IMAGE_KEY')
 cipher = Fernet(SHARED_KEY)
 
 def encrypt_image(image_path):
@@ -45,5 +45,5 @@ def encrypt_image(image_path):
 
 # Example usage
 if __name__ == "__main__":
-    image_path = "backend_py/imgs/Eu.jpg"
+    image_path = "backend_py/imgs/webcam.jpg"
     encrypt_image(image_path)
