@@ -14,10 +14,10 @@ class FaceEngine:
 
 
     # Generate a biometric vector (embedding) from the input image using DeepFace
-    def generate_vector(self, img_path):
+    def generate_vector(self, img_cv2):
         try:
             results = DeepFace.represent(
-                img_path = img_path,
+                img_path = img_cv2, # Pass the OpenCV image directly to DeepFace
                 model_name = self.model_name,
                 detector_backend = self.detector,
                 enforce_detection = True, # True to ensure that a face is detected
