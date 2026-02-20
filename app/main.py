@@ -2,9 +2,9 @@
 
 from fastapi import FastAPI
 
-from backend_py.models import EnrollRequest, VerifyRequest
-from backend_py.secure_getter import decrypt_image_from_string
-from backend_py.face_engine import FaceEngine
+from app.models import EnrollRequest, VerifyRequest
+from app.security.secure_getter import decrypt_image_from_string
+from app.face_engine import FaceEngine
 
 app = FastAPI()
 

@@ -1,6 +1,6 @@
 # testing.py
 
-from face_engine import FaceEngine
+from app.face_engine import FaceEngine
 import sys
 
 

@@ -7,17 +7,14 @@ import cv2
 import os
 from pathlib import Path
 
-# Load environment variables from .env file
-env_path = Path(__file__).parent / '.env'
-load_dotenv(env_path)
 
-SHARED_KEY = os.getenv('IMAGE_KEY')
+load_dotenv()
+
+SHARED_KEY = os.getenv('IMAGE_KEY').encode()
+
 if SHARED_KEY is None:
     raise ValueError("IMAGE_KEY not found in .env file")
 
-# Convert string to bytes
-if isinstance(SHARED_KEY, str):
-    SHARED_KEY = SHARED_KEY.encode()
 
 cipher = Fernet(SHARED_KEY)
 
