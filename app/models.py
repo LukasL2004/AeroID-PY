@@ -8,4 +8,4 @@ class EnrollRequest(BaseModel):
 
 class VerifyRequest(BaseModel):
     encrypted_image: str # Encrypted image data
-    biometric_vector: list # Biometric vector to compare against
+    biometric_vector: str # Biometric vector to compare against

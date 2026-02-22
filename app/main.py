@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from app.models import EnrollRequest, VerifyRequest
 from app.security.secure_getter import decrypt_image_from_string
 from app.face_engine import FaceEngine
+from app.vector_codec import compress_vector, decompress_vector
 
 app = FastAPI()
 
@@ -41,8 +42,13 @@ def enroll(request: EnrollRequest):
 
         biometric_vector = fe.generate_vector(decrypted_image)
 
+        biometric_vector.update({
+            "biometric_vector": compress_vector(biometric_vector["biometric_vector"])
+        })
+
         return {"message": "Received data successfully",
                 "biometric_vector": biometric_vector}
+    
     except Exception as e:
         print(f"[ERROR] An error occurred during enrollment: {e}")
 
@@ -70,10 +76,12 @@ def verify(request: VerifyRequest):
         # Extract the biometric vector from the results to verify
         biometric_vector_to_verify = results_image_to_verify["biometric_vector"]
 
-        #print(biometric_vector_to_verify)
+
+        # Decompress the biometric vectors
+        qr_vector = decompress_vector(request.biometric_vector)
 
         # Compare the biometric vector from the image to verify with the biometric vector from the QR code
-        results = fe.compare_vectors(biometric_vector_to_verify, request.biometric_vector)
+        results = fe.compare_vectors(biometric_vector_to_verify, qr_vector)
 
         return {"message": "Received data successfully",
                 "verification_results": results}

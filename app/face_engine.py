@@ -4,6 +4,8 @@ from deepface import DeepFace
 import numpy as np
 import cv2
 
+from app.vector_codec import compress_vector, decompress_vector, transform_vector_to_f16
+
 
 
 class FaceEngine:
@@ -24,14 +26,14 @@ class FaceEngine:
             )
 
             biometric_vector = results[0]["embedding"] # Extract the embedding vector from the results
-            #confidence = results[0]["confidence"] # Extract the confidence score from the results
 
-            print(f"[INFO] Biometric vector generated successfully with confidence: {biometric_vector[0:10]}")
+
+            print(f"[INFO] Biometric vector generated successfully: {biometric_vector[0:10]}")
 
             return {
                 "status": "success",
                 "biometric_vector": biometric_vector,
-                #"confidence": confidence
+                "message": None
             }
         
         except ValueError:

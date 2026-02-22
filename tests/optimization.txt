@@ -38,5 +38,6 @@ Request Size: 402.57 KB
 
 
 biometric_vector: 10.7kb
-
+    After transforming to float16: 6kb
+    After compressing with gzip and transformed to base64: 1.34kb
         
