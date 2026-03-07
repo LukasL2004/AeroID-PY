@@ -1,0 +1,252 @@
+[YOLO] Model loaded: yolov8n.pt (conf=0.4, tailgate=60%)
+=================================================================
+  DeepFace MODEL EVALUATION
+  Model:    Facenet
+  Detector: yunet
+  Images:   22
+=================================================================
+
+[1/22] AndreiT_1.JPG ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-0.49422457814216614, 0.7592830657958984, -0.1263541877269745, 1.4692013263702393, 0.10681914538145065, -1.9903899431228638, 1.3885197639465332, -0.6839472651481628, 0.039284899830818176, 0.4039533734321594]
+✓  (4.02s)
+
+[2/22] AndreiT_2.JPG ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-0.5173015594482422, 1.2603517770767212, 0.3668456971645355, 2.073026657104492, 2.3685128688812256, -2.5523571968078613, 1.686698079109192, -0.9567479491233826, 0.17693504691123962, 0.6283378601074219]
+✓  (0.93s)
+
+[3/22] AndreiT_3.JPG ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-0.7540374994277954, 1.686552882194519, 0.848848819732666, 1.6825051307678223, 1.9574788808822632, -2.585111618041992, 1.372846007347107, -1.9049649238586426, -0.25516796112060547, 0.31635117530822754]
+✓  (0.81s)
+
+[4/22] AndreiT_4.JPG ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-0.8120008707046509, 0.5154827833175659, 0.12428184598684311, 0.65696120262146, 1.7194379568099976, -2.438081741333008, 0.6006686091423035, -1.4537479877471924, 0.2967052161693573, 0.36141741275787354]
+✓  (0.96s)
+
+[5/22] Andrei_1.jpg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-0.9343026876449585, 0.7253435850143433, 0.8314123153686523, 1.8122889995574951, 0.5495064854621887, -2.5401246547698975, 1.3610787391662598, -1.2726385593414307, -0.7270248532295227, 1.4296207427978516]
+✓  (0.75s)
+
+[6/22] Andrei_2.jpg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-0.3114778995513916, 0.3479999601840973, -0.8742654323577881, 0.5507833957672119, 1.0207511186599731, -0.5397492051124573, 0.18158666789531708, -0.15390774607658386, 0.7304769158363342, -0.16744740307331085]
+✓  (0.44s)
+
+[7/22] Lukas_1.jpeg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-1.5139610767364502, -1.0109680891036987, 1.1269378662109375, 0.25865063071250916, 0.1631929725408554, -0.5702897310256958, 1.9606828689575195, -2.173168420791626, -1.8732142448425293, 0.6192335486412048]
+✓  (0.52s)
+
+[8/22] Lukas_2.jpeg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [0.3779827952384949, -0.4228379726409912, 0.5865910053253174, 1.6932368278503418, 1.9902127981185913, -1.3874913454055786, 0.9031467437744141, -0.9586342573165894, -0.887299120426178, 1.6495943069458008]
+✓  (0.50s)
+
+[9/22] Lukas_3.jpeg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-0.423543781042099, -0.35202285647392273, -0.44095155596733093, 1.7181775569915771, 1.3227514028549194, -0.8346227407455444, 2.5551297664642334, -2.369381904602051, -1.6187562942504883, 1.7687879800796509]
+✓  (0.51s)
+
+[10/22] Lukas_4.jpeg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [0.23827901482582092, 0.09817172586917877, 0.8092835545539856, 1.516772985458374, 1.5153779983520508, -0.1587095707654953, 0.9711037874221802, -1.0637691020965576, -1.3729701042175293, 2.3620190620422363]
+✓  (0.48s)
+
+[11/22] Lukas_5.jpeg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-1.731703519821167, -1.1874287128448486, -0.4092266857624054, 1.733625888824463, 1.6493161916732788, -0.19336040318012238, 0.3447589576244354, -1.6685094833374023, -0.5972480773925781, 0.761063277721405]
+✓  (0.44s)
+
+[12/22] Lukas_6.jpeg ... [YOLO] Background person ignored (area ratio: 24.6%)
+[YOLO] Background person ignored (area ratio: 4.8%)
+[YOLO] Background person ignored (area ratio: 3.6%)
+[YOLO] OK – 1 main passenger + 3 background person(s) ignored.
+[INFO] Biometric vector generated successfully: [0.09719409048557281, 0.4299603998661041, 0.30238959193229675, 1.8516360521316528, 2.000230073928833, -1.2724180221557617, 1.2636865377426147, -1.366909384727478, -1.1233360767364502, 1.985508680343628]
+✓  (0.46s)
+
+[13/22] Persoane_1.JPG ... [YOLO] ⚠ Intruder detected (area ratio: 77.9% >= 60%)
+[YOLO] TAILGATING ALERT – 1 intruder(s) near the gate. Rejecting.
+✗  (0.14s)  — [YOLO] Multiple persons detected. Only one person is allowed.
+
+[14/22] Persoane_2.JPG ... [YOLO] ⚠ Intruder detected (area ratio: 78.4% >= 60%)
+[YOLO] ⚠ Intruder detected (area ratio: 66.3% >= 60%)
+[YOLO] Background person ignored (area ratio: 50.6%)
+[YOLO] TAILGATING ALERT – 2 intruder(s) near the gate. Rejecting.
+✗  (0.19s)  — [YOLO] Multiple persons detected. Only one person is allowed.
+
+[15/22] Persoane_3.JPG ... [YOLO] ⚠ Intruder detected (area ratio: 67.2% >= 60%)
+[YOLO] Background person ignored (area ratio: 9.0%)
+[YOLO] Background person ignored (area ratio: 2.5%)
+[YOLO] TAILGATING ALERT – 1 intruder(s) near the gate. Rejecting.
+✗  (0.16s)  — [YOLO] Multiple persons detected. Only one person is allowed.
+
+[16/22] Tigan_1.jpeg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-0.5111827850341797, -0.8032146692276001, -1.1107808351516724, 0.18483003973960876, 1.0523556470870972, 0.08395591378211975, 0.4552972912788391, 0.5062310099601746, -0.4402667284011841, -0.952345609664917]
+✓  (0.79s)
+
+[17/22] Tigan_2.jpeg ... [YOLO] Background person ignored (area ratio: 1.6%)
+[YOLO] Background person ignored (area ratio: 1.0%)
+[YOLO] OK – 1 main passenger + 2 background person(s) ignored.
+[INFO] Biometric vector generated successfully: [-0.07128410041332245, -0.6935807466506958, 0.5408077836036682, -0.8638705015182495, 1.0161185264587402, 0.554035484790802, 0.2422170490026474, 0.40064936876296997, -0.8585335612297058, -1.2911502122879028]
+✓  (0.68s)
+
+[18/22] Tigan_3.jpeg ... [YOLO] Background person ignored (area ratio: 0.9%)
+[YOLO] Background person ignored (area ratio: 0.4%)
+[YOLO] OK – 1 main passenger + 2 background person(s) ignored.
+[INFO] Biometric vector generated successfully: [-0.760062575340271, -0.4664086699485779, 0.20252135396003723, 1.0193984508514404, 1.5305343866348267, -0.1817750334739685, -0.07552435994148254, 0.7136043906211853, 0.19541606307029724, 0.2575952410697937]
+✓  (0.66s)
+
+[19/22] Tigan_4.jpeg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [-0.04860405623912811, -0.8384009599685669, 0.4343453645706177, -0.0787447839975357, 1.0736325979232788, -0.9372172951698303, -0.7780833840370178, 0.028192978352308273, -1.1176338195800781, 0.5724985003471375]
+✓  (0.56s)
+
+[20/22] Tigan_5.jpeg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [0.41054192185401917, 0.1965755820274353, -0.6416506171226501, -0.9832762479782104, 1.1097320318222046, -1.2847564220428467, -0.23791834712028503, -0.4493599832057953, -0.87649005651474, 0.39653679728507996]
+✓  (0.63s)
+
+[21/22] Zbuce_1.jpeg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [0.9272165298461914, 0.5856629610061646, -0.1443226933479309, 0.5671951770782471, 1.536435842514038, -2.373445510864258, 1.1991881132125854, -0.18981942534446716, -1.2734874486923218, 1.2792351245880127]
+✓  (0.58s)
+
+[22/22] Zbuce_2.jpeg ... [YOLO] OK – exactly 1 person detected.
+[INFO] Biometric vector generated successfully: [1.351100206375122, 1.1676459312438965, -0.24427887797355652, 0.37054306268692017, 0.37903261184692383, -0.26140984892845154, 0.7639049887657166, -0.11731508374214172, -0.3549726903438568, 0.5426555275917053]
+✓  (0.54s)
+
+
+=================================================================
+  RESULTS — Facenet + yunet
+-----------------------------------------------------------------
+  Total images tested   : 22
+  Successful detections : 19
+  Failed detections     : 3
+  Detection score       : 86.4%
+  Avg time / image      : 0.71s
+=================================================================
+
+  Failed images:
+    ✗ Persoane_1.JPG  —  Multiple persons detected. Only one person is allowed.
+    ✗ Persoane_2.JPG  —  Multiple persons detected. Only one person is allowed.
+    ✗ Persoane_3.JPG  —  Multiple persons detected. Only one person is allowed.
+
+
+
+=================================================================
+  IDENTITY VERIFICATION TEST
+  Model:    Facenet
+  Detector: yunet
+  Persons:  6
+=================================================================
+
+  ┌─ Andrei (1 comparison(s))
+[INFO] Biometric vector generated successfully: [-0.9343026876449585, 0.7253435850143433, 0.8314123153686523, 1.8122889995574951, 0.5495064854621887, -2.5401246547698975, 1.3610787391662598, -1.2726385593414307, -0.7270248532295227, 1.4296207427978516]
+[INFO] Biometric vector generated successfully: [-0.3114778995513916, 0.3479999601840973, -0.8742654323577881, 0.5507833957672119, 1.0207511186599731, -0.5397492051124573, 0.18158666789531708, -0.15390774607658386, 0.7304769158363342, -0.16744740307331085]
+[INFO] Vectors do NOT match with distance: 0.6034962053768694
+  │  ✗ Andrei_2.jpg  —  NO MATCH  (distance: 0.6035)
+  └─ Score: 0/1
+
+  ┌─ AndreiT (3 comparison(s))
+[INFO] Biometric vector generated successfully: [-0.49422457814216614, 0.7592830657958984, -0.1263541877269745, 1.4692013263702393, 0.10681914538145065, -1.9903899431228638, 1.3885197639465332, -0.6839472651481628, 0.039284899830818176, 0.4039533734321594]
+[INFO] Biometric vector generated successfully: [-0.5173015594482422, 1.2603517770767212, 0.3668456971645355, 2.073026657104492, 2.3685128688812256, -2.5523571968078613, 1.686698079109192, -0.9567479491233826, 0.17693504691123962, 0.6283378601074219]
+[INFO] Vectors match with distance: 0.35155405840418763
+  │  ✓ AndreiT_2.JPG  —  MATCH  (distance: 0.3516)
+[INFO] Biometric vector generated successfully: [-0.7540374994277954, 1.686552882194519, 0.848848819732666, 1.6825051307678223, 1.9574788808822632, -2.585111618041992, 1.372846007347107, -1.9049649238586426, -0.25516796112060547, 0.31635117530822754]
+[INFO] Vectors match with distance: 0.3037045929272544
+  │  ✓ AndreiT_3.JPG  —  MATCH  (distance: 0.3037)
+[INFO] Biometric vector generated successfully: [-0.8120008707046509, 0.5154827833175659, 0.12428184598684311, 0.65696120262146, 1.7194379568099976, -2.438081741333008, 0.6006686091423035, -1.4537479877471924, 0.2967052161693573, 0.36141741275787354]
+[INFO] Vectors match with distance: 0.3852410938076979
+  │  ✓ AndreiT_4.JPG  —  MATCH  (distance: 0.3852)
+  └─ Score: 3/3
+
+  ┌─ Lukas (5 comparison(s))
+[INFO] Biometric vector generated successfully: [-1.5139610767364502, -1.0109680891036987, 1.1269378662109375, 0.25865063071250916, 0.1631929725408554, -0.5702897310256958, 1.9606828689575195, -2.173168420791626, -1.8732142448425293, 0.6192335486412048]
+[INFO] Biometric vector generated successfully: [0.3779827952384949, -0.4228379726409912, 0.5865910053253174, 1.6932368278503418, 1.9902127981185913, -1.3874913454055786, 0.9031467437744141, -0.9586342573165894, -0.887299120426178, 1.6495943069458008]
+[INFO] Vectors match with distance: 0.46267778761766265
+  │  ✓ Lukas_2.jpeg  —  MATCH  (distance: 0.4627)
+[INFO] Biometric vector generated successfully: [-0.423543781042099, -0.35202285647392273, -0.44095155596733093, 1.7181775569915771, 1.3227514028549194, -0.8346227407455444, 2.5551297664642334, -2.369381904602051, -1.6187562942504883, 1.7687879800796509]
+[INFO] Vectors match with distance: 0.2708872495450597
+  │  ✓ Lukas_3.jpeg  —  MATCH  (distance: 0.2709)
+[INFO] Biometric vector generated successfully: [0.23827901482582092, 0.09817172586917877, 0.8092835545539856, 1.516772985458374, 1.5153779983520508, -0.1587095707654953, 0.9711037874221802, -1.0637691020965576, -1.3729701042175293, 2.3620190620422363]
+[INFO] Vectors match with distance: 0.4109427486192705
+  │  ✓ Lukas_4.jpeg  —  MATCH  (distance: 0.4109)
+[INFO] Biometric vector generated successfully: [-1.731703519821167, -1.1874287128448486, -0.4092266857624054, 1.733625888824463, 1.6493161916732788, -0.19336040318012238, 0.3447589576244354, -1.6685094833374023, -0.5972480773925781, 0.761063277721405]
+[INFO] Vectors match with distance: 0.36631041956846655
+  │  ✓ Lukas_5.jpeg  —  MATCH  (distance: 0.3663)
+[INFO] Biometric vector generated successfully: [0.09719409048557281, 0.4299603998661041, 0.30238959193229675, 1.8516360521316528, 2.000230073928833, -1.2724180221557617, 1.2636865377426147, -1.366909384727478, -1.1233360767364502, 1.985508680343628]
+[INFO] Vectors match with distance: 0.3994976202620859
+  │  ✓ Lukas_6.jpeg  —  MATCH  (distance: 0.3995)
+  └─ Score: 5/5
+
+  ┌─ Persoane (2 comparison(s))
+[INFO] Biometric vector generated successfully: [-0.47981777787208557, -0.4210520386695862, -0.22592106461524963, 1.542754054069519, 2.0474562644958496, -0.7829206585884094, 1.067847728729248, -0.9261385798454285, -0.86461341381073, 1.557936429977417]
+[INFO] Biometric vector generated successfully: [-1.0370535850524902, 1.2930241823196411, 0.08144664764404297, 1.6833831071853638, 1.9099708795547485, -2.920128345489502, 0.7911595106124878, -1.2286032438278198, -0.1823176145553589, 0.8720542192459106]
+[INFO] Vectors do NOT match with distance: 0.5668739432041757
+  │  ✗ Persoane_2.JPG  —  NO MATCH  (distance: 0.5669)
+[INFO] Biometric vector generated successfully: [1.5174672603607178, 1.342513084411621, 0.7192239165306091, 1.628365397453308, 1.2625852823257446, -0.7044234275817871, 2.1403467655181885, -1.648114562034607, 0.036467768251895905, 0.6852785348892212]
+[INFO] Vectors match with distance: 0.4667204984594784
+  │  ✓ Persoane_3.JPG  —  MATCH  (distance: 0.4667)
+  └─ Score: 1/2
+
+  ┌─ Tigan (4 comparison(s))
+[INFO] Biometric vector generated successfully: [-0.5111827850341797, -0.8032146692276001, -1.1107808351516724, 0.18483003973960876, 1.0523556470870972, 0.08395591378211975, 0.4552972912788391, 0.5062310099601746, -0.4402667284011841, -0.952345609664917]
+[INFO] Biometric vector generated successfully: [-0.07128410041332245, -0.6935807466506958, 0.5408077836036682, -0.8638705015182495, 1.0161185264587402, 0.554035484790802, 0.2422170490026474, 0.40064936876296997, -0.8585335612297058, -1.2911502122879028]
+[INFO] Vectors match with distance: 0.4124614903210526
+  │  ✓ Tigan_2.jpeg  —  MATCH  (distance: 0.4125)
+[INFO] Biometric vector generated successfully: [-0.760062575340271, -0.4664086699485779, 0.20252135396003723, 1.0193984508514404, 1.5305343866348267, -0.1817750334739685, -0.07552435994148254, 0.7136043906211853, 0.19541606307029724, 0.2575952410697937]
+[INFO] Vectors do NOT match with distance: 0.555373659693317
+  │  ✗ Tigan_3.jpeg  —  NO MATCH  (distance: 0.5554)
+[INFO] Biometric vector generated successfully: [-0.04860405623912811, -0.8384009599685669, 0.4343453645706177, -0.0787447839975357, 1.0736325979232788, -0.9372172951698303, -0.7780833840370178, 0.028192978352308273, -1.1176338195800781, 0.5724985003471375]
+[INFO] Vectors do NOT match with distance: 0.6147757007019239
+  │  ✗ Tigan_4.jpeg  —  NO MATCH  (distance: 0.6148)
+[INFO] Biometric vector generated successfully: [0.41054192185401917, 0.1965755820274353, -0.6416506171226501, -0.9832762479782104, 1.1097320318222046, -1.2847564220428467, -0.23791834712028503, -0.4493599832057953, -0.87649005651474, 0.39653679728507996]
+[INFO] Vectors match with distance: 0.49078412623481804
+  │  ✓ Tigan_5.jpeg  —  MATCH  (distance: 0.4908)
+  └─ Score: 2/4
+
+  ┌─ Zbuce (1 comparison(s))
+[INFO] Biometric vector generated successfully: [0.9272165298461914, 0.5856629610061646, -0.1443226933479309, 0.5671951770782471, 1.536435842514038, -2.373445510864258, 1.1991881132125854, -0.18981942534446716, -1.2734874486923218, 1.2792351245880127]
+[INFO] Biometric vector generated successfully: [1.351100206375122, 1.1676459312438965, -0.24427887797355652, 0.37054306268692017, 0.37903261184692383, -0.26140984892845154, 0.7639049887657166, -0.11731508374214172, -0.3549726903438568, 0.5426555275917053]
+[INFO] Vectors match with distance: 0.43565672922303744
+  │  ✓ Zbuce_2.jpeg  —  MATCH  (distance: 0.4357)
+  └─ Score: 1/1
+
+
+=================================================================
+  VERIFICATION RESULTS — Facenet + yunet
+-----------------------------------------------------------------
+  Total comparisons     : 16
+  Matches               : 12
+  Mismatches            : 4
+  Errors (no face)      : 0
+  Match rate            : 75.0%
+-----------------------------------------------------------------
+  Person                Match   Fail  Error
+  ──────────────────── ────── ────── ──────
+  Andrei                    0      1      0
+  AndreiT                   3      0      0
+  Lukas                     5      0      0
+  Persoane                  1      1      0
+  Tigan                     2      2      0
+  Zbuce                     1      0      0
+=================================================================
+[YOLO] Model loaded: yolov8n.pt (conf=0.4, tailgate=60%)
+
+
+=================================================================
+  YOLO MULTI-PERSON TEST
+  Images:   3
+=================================================================
+
+  [1/3] Persoane_1.JPG ... [YOLO] ⚠ Intruder detected (area ratio: 77.9% >= 60%)
+[YOLO] TAILGATING ALERT – 1 intruder(s) near the gate. Rejecting.
+✓ REJECTED — 2 person(s) — Multiple persons detected. Only one person is allowed.
+
+  [2/3] Persoane_2.JPG ... [YOLO] ⚠ Intruder detected (area ratio: 78.4% >= 60%)
+[YOLO] ⚠ Intruder detected (area ratio: 66.3% >= 60%)
+[YOLO] Background person ignored (area ratio: 50.6%)
+[YOLO] TAILGATING ALERT – 2 intruder(s) near the gate. Rejecting.
+✓ REJECTED — 4 person(s) — Multiple persons detected. Only one person is allowed.
+
+  [3/3] Persoane_3.JPG ... [YOLO] ⚠ Intruder detected (area ratio: 67.2% >= 60%)
+[YOLO] Background person ignored (area ratio: 9.0%)
+[YOLO] Background person ignored (area ratio: 2.5%)
+[YOLO] TAILGATING ALERT – 1 intruder(s) near the gate. Rejecting.
+✓ REJECTED — 4 person(s) — Multiple persons detected. Only one person is allowed.
+
+
+-----------------------------------------------------------------
+  Correctly rejected    : 3/3
+  Incorrectly passed    : 0/3
+=================================================================

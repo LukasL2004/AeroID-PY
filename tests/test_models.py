@@ -21,6 +21,7 @@ from collections import defaultdict
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from app.face_engine import FaceEngine
+from app.yolo_filter import YOLOFilter
 
 
 def collect_images(imgs_dir: str):
@@ -67,6 +68,7 @@ def run_test():
 
     # Instantiate FaceEngine with its current configuration
     engine = FaceEngine()
+    yolo_filter = YOLOFilter()
     model_name = engine.model_name
     detector = engine.detector
 
@@ -87,6 +89,18 @@ def run_test():
         print(f"\n[{idx}/{len(images)}] {img_name} ... ", end="", flush=True)
 
         start = time.time()
+
+        # Treapta 1: YOLO scan
+        scan = yolo_filter.scan_frame(img_path)
+        if not scan["ok"]:
+            elapsed = time.time() - start
+            times.append(elapsed)
+            failures += 1
+            failed_images.append((img_name, scan["message"]))
+            print(f"✗  ({elapsed:.2f}s)  — [YOLO] {scan['message']}")
+            continue
+
+        # Treapta 2: DeepFace
         result = engine.generate_vector(img_path)
         elapsed = time.time() - start
 
@@ -278,6 +292,60 @@ def save_results(log_content: str):
     print(f"\n[SAVED] Results written to: {filepath}")
 
 
+def run_yolo_test():
+    """
+    YOLO multi-person test.
+    Scans all Persoane_*.jpg/jpeg images from assets/imgs/ and reports
+    how many persons YOLO detected in each.
+    These images should contain >=2 persons to test rejection.
+    """
+    project_root = Path(__file__).parent.parent
+    imgs_dir = project_root / "assets" / "imgs"
+
+    # Collect Persoane_* images
+    patterns = ["Persoane_*.jpg", "Persoane_*.jpeg", "Persoane_*.JPG", "Persoane_*.JPEG"]
+    images = []
+    for pat in patterns:
+        images.extend(glob.glob(str(imgs_dir / pat)))
+    images = sorted(set(images))
+
+    if not images:
+        print("\n[SKIP] No Persoane_* images found. Add images to test multi-person rejection.")
+        return
+
+    yolo_filter = YOLOFilter()
+
+    print("\n")
+    print("=" * 65)
+    print(f"  YOLO MULTI-PERSON TEST")
+    print(f"  Images:   {len(images)}")
+    print("=" * 65)
+
+    correctly_rejected = 0
+    incorrectly_passed = 0
+
+    for idx, img_path in enumerate(images, start=1):
+        img_name = Path(img_path).name
+        print(f"\n  [{idx}/{len(images)}] {img_name} ... ", end="", flush=True)
+
+        scan = yolo_filter.scan_frame(img_path)
+
+        if not scan["ok"]:
+            correctly_rejected += 1
+            print(f"✓ REJECTED — {scan['persons_found']} person(s) — {scan['message']}")
+        else:
+            incorrectly_passed += 1
+            print(f"✗ PASSED (should have been rejected) — {scan['persons_found']} person(s)")
+
+    # Summary
+    total = len(images)
+    print("\n")
+    print("-" * 65)
+    print(f"  Correctly rejected    : {correctly_rejected}/{total}")
+    print(f"  Incorrectly passed    : {incorrectly_passed}/{total}")
+    print("=" * 65)
+
+
 if __name__ == "__main__":
     tee = TeeWriter(sys.stdout)
     sys.stdout = tee
@@ -285,6 +353,7 @@ if __name__ == "__main__":
     try:
         run_test()
         run_verification()
+        run_yolo_test()
     finally:
         sys.stdout = tee.original
 

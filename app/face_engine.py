@@ -9,24 +9,25 @@ from app.vector_codec import compress_vector, decompress_vector, transform_vecto
 
 
 class FaceEngine:
-    def __init__(self, model_name="Facenet", detector="retinaface", threshold=0.5):
+    def __init__(self, model_name="Facenet", detector="yunet", threshold=0.5):
         self.model_name = model_name
         self.detector = detector
         self.threshold = threshold
 
 
-    # Generate a biometric vector (embedding) from the input image using DeepFace
+    # ── Generate biometric vector (Treapta 2 – DeepFace) ───────────────
     def generate_vector(self, img_cv2):
+
+
         try:
             results = DeepFace.represent(
-                img_path = img_cv2, # Pass the OpenCV image directly to DeepFace
+                img_path = img_cv2,
                 model_name = self.model_name,
                 detector_backend = self.detector,
-                enforce_detection = True, # True to ensure that a face is detected
+                enforce_detection = True,
             )
 
-            biometric_vector = results[0]["embedding"] # Extract the embedding vector from the results
-
+            biometric_vector = results[0]["embedding"]
 
             print(f"[INFO] Biometric vector generated successfully: {biometric_vector[0:10]}")
 
@@ -97,14 +98,3 @@ class FaceEngine:
                 "message": str(e)
             }
         
-
-    def resize_image(self, img_cv2, target_size=(600, 600)):
-        try:
-            resized_img = cv2.resize(img_cv2, target_size)
-            print(f"[INFO] Image resized successfully to {target_size}")
-
-            return resized_img
-
-        except Exception as e:
-            print(f"[ERROR] An error occurred while resizing the image: {e}")
-            return img_cv2 # Return the original image if resizing fails

@@ -130,3 +130,7 @@ secrets.json
 credentials.json
 config.local.*
 backend_py/encrypted/encrypted_image.bin
+
+# Test Assets & Models
+assets/imgs/
+yolov8n.pt
